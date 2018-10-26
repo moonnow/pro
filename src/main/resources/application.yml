@@ -1,0 +1,41 @@
+server:
+  port: 6680
+
+spring:
+  datasource:
+    #不使用数据库连接池
+    #driver-class-name: com.mysql.jdbc.Driver
+    #url: jdbc:mysql://localhost:3306/wodecoding?useUnicode=yes&characterEncoding=utf8&useSSL=false
+    #username: root
+    #password: moonnow
+    #driver-class-name: oracle.jdbc.OracleDriver
+    #url: jdbc:oracle:thin:@localhost:49161:xe
+    #username: qhzw
+    #password: qhzw
+    druid:
+      #使用数据库连接池
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/empirecs?useUnicode=yes&characterEncoding=utf8&useSSL=false
+      username: root
+      password: moonnow
+      #driver-class-name: oracle.jdbc.OracleDriver
+      #url: jdbc:oracle:thin:@localhost:49161:xe
+      #username: qhzw
+      #password: qhzw
+      initial-size: 5
+      max-active: 20
+      min-idle: 10
+      max-wait: 10
+      filters: stat,wall
+      filter:
+        stat:
+          log-slow-sql: true
+          slow-sql-millis: 2000
+
+logging:
+  level:
+    root: DEBUG
+
+mybatis:
+  mapper-locations: classpath*:com/pro/**/mapping/*.xml
+  type-aliases-package: com.pro.**.entity
