@@ -22,17 +22,17 @@
       <type>pom</type>
     </dependency>
 <!--     其他模块根据需要引用即可 -->
-<!--     数据字典 -->
-<!--     <dependency> -->
-<!--       <groupId>${project.groupId}</groupId> -->
-<!--       <artifactId>data-dict-jdbc-rest</artifactId> -->
-<!--       <version>${project.version}</version> -->
-<!--       <type>pom</type> -->
-<!--     </dependency> -->
 <!--     编码插件 -->
     <dependency>
       <groupId>${project.groupId}</groupId>
       <artifactId>code-plugin-jdbc-rest</artifactId>
+      <version>${project.version}</version>
+      <type>pom</type>
+    </dependency>
+<!--     数据字典 -->
+    <dependency>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>data-dict-jdbc-rest</artifactId>
       <version>${project.version}</version>
       <type>pom</type>
     </dependency>
