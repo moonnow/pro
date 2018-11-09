@@ -1,6 +1,6 @@
 package com.pro.cs;
 
-import com.pro.tool.util.StrTools;
+import com.pro.tool.util.ToolUtil;
 
 public class Cs {
 
@@ -49,67 +49,70 @@ public class Cs {
 //    s.delete(s.length() - 2, s.length());
 //    System.out.println(s.toString());
     
-    StrTools.getFileFromContentStrAndPath("/target/\n" + 
-        "\n" + 
-        "### STS ###\n" + 
-        ".apt_generated\n" + 
-        ".classpath\n" + 
-        ".factorypath\n" + 
-        ".project\n" + 
-        ".settings\n" + 
-        ".springBeans\n" + 
-        ".sts4-cache\n" + 
-        "/bin/\n" + 
-        "\n" + 
-        "### IntelliJ IDEA ###\n" + 
-        ".idea\n" + 
-        "*.iws\n" + 
-        "*.iml\n" + 
-        "*.ipr\n" + 
-        "\n" + 
-        "### NetBeans ###\n" + 
-        "/nbproject/private/\n" + 
-        "/build/\n" + 
-        "/nbbuild/\n" + 
-        "/dist/\n" + 
-        "/nbdist/\n" + 
-        "/.nb-gradle/\n" + 
-        "\n" + 
-        "# Compiled class file\n" + 
-        "*.class\n" + 
-        "\n" + 
-        "# Log file\n" + 
-        "*.log\n" + 
-        "\n" + 
-        "# BlueJ files\n" + 
-        "*.ctxt\n" + 
-        "\n" + 
-        "# Mobile Tools for Java (J2ME)\n" + 
-        ".mtj.tmp/\n" + 
-        "\n" + 
-        "# Package Files #\n" + 
-        "*.jar\n" + 
-        "*.war\n" + 
-        "*.nar\n" + 
-        "*.ear\n" + 
-        "*.zip\n" + 
-        "*.tar.gz\n" + 
-        "*.rar\n" + 
-        "\n" + 
-        "# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml\n" + 
-        "hs_err_pid*\n" + 
-        "\n" + 
-        "pom.xml.tag\n" + 
-        ".xml.releaseBackup\n" + 
-        "pom.xml.versionsBackup\n" + 
-        "pom.xml.next\n" + 
-        "release.properties\n" + 
-        "dependency-reduced-pom.xml\n" + 
-        "buildNumber.properties\n" + 
-        ".mvn/timing.properties\n" + 
-        "\n" + 
-        ".DS_Store\n" + 
-        "", "/Users/moonnow/wode/cs/empire/3/code-plugin/sql/.gitignore");
+//    StrTools.getFileFromContentStrAndPath("/target/\n" + 
+//        "\n" + 
+//        "### STS ###\n" + 
+//        ".apt_generated\n" + 
+//        ".classpath\n" + 
+//        ".factorypath\n" + 
+//        ".project\n" + 
+//        ".settings\n" + 
+//        ".springBeans\n" + 
+//        ".sts4-cache\n" + 
+//        "/bin/\n" + 
+//        "\n" + 
+//        "### IntelliJ IDEA ###\n" + 
+//        ".idea\n" + 
+//        "*.iws\n" + 
+//        "*.iml\n" + 
+//        "*.ipr\n" + 
+//        "\n" + 
+//        "### NetBeans ###\n" + 
+//        "/nbproject/private/\n" + 
+//        "/build/\n" + 
+//        "/nbbuild/\n" + 
+//        "/dist/\n" + 
+//        "/nbdist/\n" + 
+//        "/.nb-gradle/\n" + 
+//        "\n" + 
+//        "# Compiled class file\n" + 
+//        "*.class\n" + 
+//        "\n" + 
+//        "# Log file\n" + 
+//        "*.log\n" + 
+//        "\n" + 
+//        "# BlueJ files\n" + 
+//        "*.ctxt\n" + 
+//        "\n" + 
+//        "# Mobile Tools for Java (J2ME)\n" + 
+//        ".mtj.tmp/\n" + 
+//        "\n" + 
+//        "# Package Files #\n" + 
+//        "*.jar\n" + 
+//        "*.war\n" + 
+//        "*.nar\n" + 
+//        "*.ear\n" + 
+//        "*.zip\n" + 
+//        "*.tar.gz\n" + 
+//        "*.rar\n" + 
+//        "\n" + 
+//        "# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml\n" + 
+//        "hs_err_pid*\n" + 
+//        "\n" + 
+//        "pom.xml.tag\n" + 
+//        ".xml.releaseBackup\n" + 
+//        "pom.xml.versionsBackup\n" + 
+//        "pom.xml.next\n" + 
+//        "release.properties\n" + 
+//        "dependency-reduced-pom.xml\n" + 
+//        "buildNumber.properties\n" + 
+//        ".mvn/timing.properties\n" + 
+//        "\n" + 
+//        ".DS_Store\n" + 
+//        "", "/Users/moonnow/wode/cs/empire/3/code-plugin/sql/.gitignore");
+    
+//    System.out.println(System.currentTimeMillis());
+    System.out.println(ToolUtil.getUUID());
   }
 
 }

@@ -39,3 +39,7 @@ logging:
 mybatis:
   mapper-locations: classpath*:com/pro/**/mapping/*.xml
   type-aliases-package: com.pro.**.entity
+
+proconfig:
+  cookies-times-effect: 600000
+  is-open-authorization-interceptor: true
